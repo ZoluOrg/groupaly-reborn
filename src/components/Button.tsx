@@ -9,6 +9,7 @@ const buttonVariants = cva(
       variant: {
         accent: "bg-[#792532] hover:bg-opacity-75",
         outlined: "border-[#92303f] border hover:bg-[#92303f]",
+        ghost: "hover:bg-[#792532] hover:bg-opacity-75",
       },
       size: {
         norm: "px-3 py-4 h-9",
