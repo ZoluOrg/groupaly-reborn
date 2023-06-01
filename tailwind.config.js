@@ -15,9 +15,7 @@ module.exports = {
         },
       },
     },
-    fontFamily: {
-      sans: ["Satoshi"],
-    },
+    
   },
   plugins: [],
 };
