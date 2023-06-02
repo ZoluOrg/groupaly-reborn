@@ -3,6 +3,8 @@ import dayjs from "dayjs";
 import React from "react";
 import { disposeEmitNodes } from "typescript";
 
+import { styleMerge } from "@/utils/cn";
+
 export const Clock = ({ format = "hh:mm.ss" }: { format?: string }) => {
   const [date, setDate] = React.useState<string>("");
   const getTime = () => {
@@ -16,5 +18,5 @@ export const Clock = ({ format = "hh:mm.ss" }: { format?: string }) => {
       cancelAnimationFrame(perFrame);
     };
   }, []);
-  return <span>{date}</span>;
+  return <span className={styleMerge("inline-block")}>{date}</span>;
 };
